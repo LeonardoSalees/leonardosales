@@ -15,31 +15,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Leonardo Sales | Full Stack Engineer",
-  description: "Especialista em criar soluções robustas, performáticas e de ponta a ponta.",
+  // ADICIONE ESTA LINHA:
+  metadataBase: new URL("https://leonardosales.vercel.app"), // Altere para seu domínio oficial se tiver um
   
-  // Configuração do Favicon
-  icons: {
-    icon: "/favicon.ico",
-  },
-
+  title: "Leonardo Sales | Full Stack Engineer",
+  description: "Especialista em criar soluções robustas e de alta performance.",
+  
   openGraph: {
     title: "Leonardo Sales | Full Stack Engineer",
-    description: "Transformando ideias em aplicações escaláveis com Next.js, Node e PostgreSQL.",
-    url: "https://leonardosales.vercel.app",
+    description: "Engenharia de software com foco em resultados e autoridade digital.",
+    url: "/",
     siteName: "Leonardo Sales Portfolio",
     images: [
       {
-        url: "/perfil.jpeg", // Caminho da imagem de 1200x630
+        url: "/perfil.jpeg", // Agora o Next.js saberá que o link final é https://seusite.com/opengraph-image.png
         width: 1200,
         height: 630,
-        alt: "Preview do Portfólio de Leonardo Sales",
       },
     ],
     locale: "pt_BR",
     type: "website",
   },
-
   // Twitter/X (Opcional)
   twitter: {
     card: "summary_large_image",

@@ -1,6 +1,20 @@
 import Image from "next/image";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaFigma, FaNodeJs, FaDocker } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiTypescript, SiPostgresql } from "react-icons/si";
+import Link from "next/link";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaFigma,
+  FaNodeJs,
+  FaDocker,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiPostgresql,
+} from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -49,6 +63,22 @@ const Hero = () => {
           interfaces de alta performance à infraestruturas robustas e
           escaláveis.
         </p>
+        <div className="flex flex-col md:flex-row gap-4 mt-10">
+          <Link
+            aria-label="Ir para pagina de serviços"
+            href="/servicos"
+            className="px-8 py-4 bg-brand-cyan text-brand-dark font-black rounded-full hover:scale-105 transition-transform shadow-[0_0_20px_rgba(0,255,255,0.3)] text-center"
+          >
+            CONTRATAR SOLUÇÃO ELITE
+          </Link>
+          <a
+            aria-label="Ir para portifolio"
+            href="#projects"
+            className="px-8 py-4 border border-white/10 text-white rounded-full hover:bg-white/5 transition-colors text-center"
+          >
+            Ver Portfólio
+          </a>
+        </div>
 
         {/* Tech Stack Icons - Evoluído para Full Stack */}
         <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-10 text-3xl text-white/30">

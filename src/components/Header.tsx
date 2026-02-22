@@ -8,20 +8,20 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'Sobre', href: '#about' },
-    { name: 'Formação', href: '#formation' },
-    { name: 'Projetos', href: '#projects' },
-    { name: 'Contato', href: '#contact' },
+    { name: 'Sobre', href: '/#about' },       // Adicionei / antes do #
+    { name: 'Projetos', href: '/#projects' }, // Adicionei / antes do #
+    { name: 'Serviços', href: '/servicos' },  // Link para a nova página
+    { name: 'Contato', href: '/#contact' },   // Adicionei / antes do #
   ];
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-white/5">
       <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         
-        {/* Logo */}
-        <div className="text-2xl font-bold text-white tracking-tighter">
+        {/* Logo - Agora clicável para voltar ao topo */}
+        <Link href="/" className="text-2xl font-bold text-white tracking-tighter">
           Dev<span className="text-brand-cyan">/</span>
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8">
@@ -29,10 +29,15 @@ const Header = () => {
             <li key={item.name}>
               <Link 
                 href={item.href}
-                className="text-sm font-medium text-white/60 hover:text-white transition-colors relative group"
+                className={`text-sm font-medium transition-colors relative group ${
+                  item.name === 'Serviços' ? 'text-brand-cyan' : 'text-white/60 hover:text-white'
+                }`}
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-brand-cyan transition-all group-hover:w-full" />
+                {item.name === 'Serviços' && (
+                  <span className="absolute -top-4 -right-2 text-[8px] bg-brand-cyan/20 text-brand-cyan px-1 rounded-sm animate-pulse">NOVO</span>
+                )}
               </Link>
             </li>
           ))}
