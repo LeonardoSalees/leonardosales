@@ -4,15 +4,15 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const projects = [
   {
     title: "Marques Digital",
-    description: "Plataforma de marketing digital focada em alta performance e conversão. Desenvolvimento do frontend focado em SEO e Core Web Vitals.",
+    description: "Desenvolvimento de plataforma institucional e sistema de gestão para agência de marketing. O foco do projeto foi a criação de uma interface de alta performance, otimizada para conversão e SEO, utilizando tecnologias modernas para garantir carregamento instantâneo e uma experiência de usuário premium.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     image: "/marquesdigital.png", // Salve a imagem em public/marques-digital.png
     link: "https://marquesdigital.com.br", // Exemplo de link
     github: "#"
   },
   {
-    title: "Engetech Portas de Aço",
-    description: "Sistema de catálogo e exposição de produtos industriais. Foco em UX para facilitar o pedido de orçamentos e visualização técnica.",
+    title: "Engetech Portas de Aço 24h",
+    description: "Desenvolvimento de plataforma digital para empresa do setor de engenharia de portas automáticas. O projeto priorizou a clareza técnica e a facilidade de orçamento, transformando um serviço técnico complexo em uma jornada de usuário intuitiva e profissional.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     image: "/engetech.png", // Salve a imagem em public/engetech.png
     link: "https://engetechportas.vercel.app",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "D5 Desentupidora",
-    description: "Landing Page otimizada para conversão mobile-first e integração com sistemas de atendimento rápido.",
+    description: "Desenvolvimento da plataforma institucional completa para a D5 Desentupidora. O foco foi consolidar a autoridade da marca no ambiente digital, apresentando a infraestrutura, frota e expertise técnica da empresa por meio de uma interface robusta, limpa e profissional, projetada para transmitir confiança imediata ao cliente corporativo e residencial.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     image: "/d5desentupidora.png", // Salve a imagem em public/d5-desentupidora.png
     link: "https://d5desentupidora.vercel.app",
