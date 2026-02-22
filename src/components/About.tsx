@@ -13,7 +13,6 @@ const About = () => {
           <div className="aspect-square bg-zinc-900 border border-white/5 rounded-2xl overflow-hidden relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/20 to-transparent opacity-50" />
             
-            {/* Badge Profissional */}
             <div className="absolute top-8 -left-6 bg-brand-dark border border-white/10 p-4 rounded-xl shadow-2xl transform -rotate-6 group-hover:rotate-0 transition-transform z-10">
                <span className="text-brand-cyan text-xl font-bold italic text-nowrap">Full Stack Dev 🚀</span>
             </div>
