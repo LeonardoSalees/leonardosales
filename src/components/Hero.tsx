@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaFigma } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaFigma, FaNodeJs, FaDocker } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiTypescript, SiPostgresql } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -30,55 +30,63 @@ const Hero = () => {
           <div className="absolute inset-0 bg-brand-cyan/10 blur-[80px] rounded-full -z-10 group-hover:bg-brand-cyan/20 transition-colors" />
         </div>
       </div>
-
       {/* Lado Direito: Texto e Tech Stack */}
       <div className="max-w-2xl text-center md:text-left">
         <h2 className="text-xl md:text-2xl font-medium text-white/80 mb-2">
-          Seja bem-vindo, Eu sou <span className="text-brand-cyan font-bold">Dev.</span>
+          Seja bem-vindo, Eu sou{" "}
+          <span className="text-brand-cyan font-bold">Leonardo.</span>
         </h2>
 
-        <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-tight italic">
-          FRONTEND <br />
+        <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-[0.9] italic">
+          FULL STACK <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-brand-blue to-purple-500">
-            DEVELOPER
+            ENGINEER
           </span>
         </h1>
 
-        <p className="mt-6 text-white/50 max-w-md text-lg leading-relaxed">
-          Especialista em criar interfaces modernas, performáticas e focadas na
-          experiência do usuário.
+        <p className="mt-6 text-white/50 max-w-lg text-lg leading-relaxed">
+          Especialista em arquitetar soluções de ponta a ponta, unindo
+          interfaces de alta performance à infraestruturas robustas e
+          escaláveis.
         </p>
 
-        {/* Tech Stack Icons - Escala de cinza que ganha cor no hover */}
-        <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-8 text-3xl text-white/30">
-          <FaHtml5
-            className="hover:text-[#E34F26] transition-colors cursor-help"
-            title="HTML5"
-          />
-          <FaCss3Alt
-            className="hover:text-[#1572B6] transition-colors cursor-help"
-            title="CSS3"
-          />
-          <FaJs
-            className="hover:text-[#F7DF1E] transition-colors cursor-help"
-            title="JavaScript"
-          />
-          <FaReact
-            className="hover:text-[#61DAFB] transition-colors cursor-help"
-            title="React"
-          />
-          <SiNextdotjs
-            className="hover:text-white transition-colors cursor-help"
-            title="Next.js"
-          />
-          <SiTailwindcss
-            className="hover:text-[#06B6D4] transition-colors cursor-help"
-            title="Tailwind CSS"
-          />
-          <FaFigma
-            className="hover:text-[#F24E1E] transition-colors cursor-help"
-            title="Figma"
-          />
+        {/* Tech Stack Icons - Evoluído para Full Stack */}
+        <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-10 text-3xl text-white/30">
+          {/* Frontend Group */}
+          <div className="flex gap-4 border-r border-white/10 pr-6">
+            <FaReact
+              className="hover:text-[#61DAFB] transition-all duration-300 cursor-help hover:scale-110"
+              title="React.js"
+            />
+            <SiNextdotjs
+              className="hover:text-white transition-all duration-300 cursor-help hover:scale-110"
+              title="Next.js 15"
+            />
+            <SiTailwindcss
+              className="hover:text-[#06B6D4] transition-all duration-300 cursor-help hover:scale-110"
+              title="Tailwind CSS"
+            />
+          </div>
+
+          {/* Backend & Data Group */}
+          <div className="flex gap-4">
+            <FaNodeJs
+              className="hover:text-[#339933] transition-all duration-300 cursor-help hover:scale-110"
+              title="Node.js"
+            />
+            <SiTypescript
+              className="hover:text-[#3178C6] transition-all duration-300 cursor-help hover:scale-110"
+              title="TypeScript"
+            />
+            <SiPostgresql
+              className="hover:text-[#4169E1] transition-all duration-300 cursor-help hover:scale-110"
+              title="PostgreSQL"
+            />
+            <FaDocker
+              className="hover:text-[#2496ED] transition-all duration-300 cursor-help hover:scale-110"
+              title="Docker"
+            />
+          </div>
         </div>
       </div>
     </section>
