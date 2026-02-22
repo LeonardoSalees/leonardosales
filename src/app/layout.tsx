@@ -15,9 +15,38 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Leonardo Sales | Full Stack Developer",
-  description:
-    "Portfólio profissional de  Leonardo Sales, desenvolvedor Full Stack especialista em React, Next.js e Node.js.",
+  title: "Leonardo Sales | Full Stack Engineer",
+  description: "Especialista em criar soluções robustas, performáticas e de ponta a ponta.",
+  
+  // Configuração do Favicon
+  icons: {
+    icon: "/favicon.ico",
+  },
+
+  openGraph: {
+    title: "Leonardo Sales | Full Stack Engineer",
+    description: "Transformando ideias em aplicações escaláveis com Next.js, Node e PostgreSQL.",
+    url: "https://leonardosales.vercel.app",
+    siteName: "Leonardo Sales Portfolio",
+    images: [
+      {
+        url: "/perfil.jpeg", // Caminho da imagem de 1200x630
+        width: 1200,
+        height: 630,
+        alt: "Preview do Portfólio de Leonardo Sales",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+
+  // Twitter/X (Opcional)
+  twitter: {
+    card: "summary_large_image",
+    title: "Leonardo Sales | Full Stack Engineer",
+    description: "Desenvolvedor Full Stack especializado em ecossistema JavaScript.",
+    images: ["/perfil.jpeg"],
+  },
 };
 
 export default function RootLayout({
