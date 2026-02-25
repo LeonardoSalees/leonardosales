@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Leonardo Sales | Full Stack Engineer",
     description: "Confira meu portfólio, projetos e experiências no desenvolvimento de software de alta performance.",
-    url: "/",
+    url: "https://leonardosales.vercel.app",
     siteName: "Leonardo Sales Portfolio",
     images: [
       {
