@@ -15,33 +15,50 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // ADICIONE ESTA LINHA:
-  metadataBase: new URL("https://leonardosales.vercel.app"), // Altere para seu domínio oficial se tiver um
+  metadataBase: new URL("https://leonardosales.vercel.app"),
   
-  title: "Leonardo Sales | Full Stack Engineer",
-  description: "Especialista em criar soluções robustas e de alta performance.",
+  title: {
+    default: "Leonardo Sales | Full Stack Engineer",
+    template: "%s | Leonardo Sales"
+  },
+  description: "Engenheiro de Software Full Stack especializado em React, Next.js, Node.js e arquiteturas escaláveis.",
   
+  keywords: [
+    "Leonardo Sales",
+    "Full Stack Engineer",
+    "Software Developer",
+    "React Specialist",
+    "Next.js Developer Brazil",
+    "Node.js Engineer",
+    "Desenvolvedor Full Stack",
+    "Engenheiro de Software",
+  ],
+
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  
+  manifest: "/site.webmanifest",
+
   openGraph: {
     title: "Leonardo Sales | Full Stack Engineer",
-    description: "Engenharia de software com foco em resultados e autoridade digital.",
+    description: "Confira meu portfólio, projetos e experiências no desenvolvimento de software de alta performance.",
     url: "/",
     siteName: "Leonardo Sales Portfolio",
     images: [
       {
-        url: "/perfil.jpeg", // Agora o Next.js saberá que o link final é https://seusite.com/opengraph-image.png
+        url: "/opengraph-img.jpeg", 
         width: 1200,
         height: 630,
+        alt: "Leonardo Sales - Full Stack Engineer",
       },
     ],
     locale: "pt_BR",
     type: "website",
-  },
-  // Twitter/X (Opcional)
-  twitter: {
-    card: "summary_large_image",
-    title: "Leonardo Sales | Full Stack Engineer",
-    description: "Desenvolvedor Full Stack especializado em ecossistema JavaScript.",
-    images: ["/perfil.jpeg"],
   },
 };
 
