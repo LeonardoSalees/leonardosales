@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "Leonardo Sales Portfolio",
     images: [
       {
-        url: "/opengraph-img.png", 
+        url: "https://leonardosales.vercel.app/opengraph-img.png", 
         width: 1200,
         height: 630,
         alt: "Leonardo Sales - Full Stack Engineer",
