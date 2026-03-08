@@ -1,0 +1,36 @@
+.fullPageContainer {
+  position: fixed; /* Fixa na tela toda, mesmo com scroll */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none; /* Permite clicar nos links e botões por baixo */
+  z-index: -100; /* Fica na frente de tudo, ou use 0 para ficar atrás */
+  background-color: transparent !important;
+  opacity: 0.1;
+}
+
+.bill {
+  position: absolute;
+  top: -120px;
+  will-change: transform; /* Otimização para o browser */
+  animation: fallAnimation linear forwards;
+}
+
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) translateX(50px) rotate(360deg);
+    opacity: 0;
+  }
+}
