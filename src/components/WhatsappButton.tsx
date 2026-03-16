@@ -16,14 +16,14 @@ const WhatsappButton = () => {
       aria-label="Contato via WhatsApp"
     >
       {/* Efeito de Ondas (Pulsação) */}
-      <span className="absolute inset-0 rounded-full bg-brand-cyan/20 animate-ping group-hover:pause" />
+      <span className="absolute inset-0 rounded-full bg-cyan-800/20 animate-ping group-hover:pause" />
       
       {/* Botão Principal */}
-      <div className="relative flex items-center justify-center w-16 h-16 bg-brand-dark/80 backdrop-blur-lg border border-white/10 text-brand-cyan rounded-full shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:border-brand-cyan/50 group-hover:text-white">
+      <div className="relative flex items-center justify-center w-16 h-16 bg-green-500/80 backdrop-blur-lg border border-white/10 text-brand-cyan rounded-full shadow-2xl transition-all duration-300 group-hover:scale-110 group-hover:border-brand-cyan/50 group-hover:text-white">
         <FaWhatsapp size={32} />
         
         {/* Tooltip Lateral (Aparece no Hover) */}
-        <span className="absolute right-20 px-4 py-2 rounded-lg bg-brand-dark/90 border border-white/10 text-white text-sm font-medium opacity-0 -translate-x-4 pointer-events-none transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 whitespace-nowrap">
+        <span className="absolute right-20 px-4 py-2 rounded-lg bg-black/90 border border-white/10 text-white text-sm font-medium opacity-0 -translate-x-4 pointer-events-none transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 whitespace-nowrap">
           Vamos conversar?
         </span>
       </div>

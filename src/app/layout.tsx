@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import WhatsappButton from "@/components/WhatsappButton";
-import MoneyRain from "@/components/MoneyRain";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,46 +14,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://leonardosales.vercel.app"),
-  
+  metadataBase: new URL("https://leonardosites.com.br"),
+
   title: {
-    default: "Leonardo Sales | Full Stack Engineer",
-    template: "%s | Leonardo Sales"
+    default: "Receba Clientes Pelo Google | Criação de Sites e Google Ads",
+    template: "%s | Leonardo Sites",
   },
-  description: "Engenheiro de Software Full Stack especializado em React, Next.js, Node.js e arquiteturas escaláveis.",
-  
+
+  description:
+    "Criamos sua página profissional e colocamos sua empresa nos anúncios do Google para gerar clientes direto no WhatsApp.",
+
   keywords: [
-    "Leonardo Sales",
-    "Full Stack Engineer",
-    "Software Developer",
-    "React Specialist",
-    "Next.js Developer Brazil",
-    "Node.js Engineer",
-    "Desenvolvedor Full Stack",
-    "Engenheiro de Software",
+    "criação de sites",
+    "google ads para empresas",
+    "landing page profissional",
+    "clientes pelo google",
+    "site para empresas locais",
   ],
 
-  icons: {
-    icon: [
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-    ],
-    apple: "/apple-touch-icon.png",
-  },
-  
-  manifest: "/site.webmanifest",
-
   openGraph: {
-    title: "Leonardo Sales | Full Stack Engineer",
-    description: "Confira meu portfólio, projetos e experiências no desenvolvimento de software de alta performance.",
-    url: "https://leonardosales.vercel.app",
-    siteName: "Leonardo Sales Portfolio",
+    title: "Receba clientes pelo Google",
+    description:
+      "Landing pages profissionais e campanhas Google Ads para gerar clientes para sua empresa.",
+    url: "https://leonardosites.com.br",
+    siteName: "Leonardo Sites",
     images: [
       {
-        url: "/opengraph-img.png", 
+        url: "/opengraph-img.png",
         width: 1200,
         height: 630,
-        alt: "Leonardo Sales - Full Stack Engineer",
+        alt: "Clientes pelo Google",
       },
     ],
     locale: "pt_BR",
@@ -73,9 +61,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a0c10] text-white font-[family-name:var(--font-geist-sans)]`}
       >
-      <MoneyRain />
-
-        <Header />
         <main>{children}</main>
         <WhatsappButton />
       </body>

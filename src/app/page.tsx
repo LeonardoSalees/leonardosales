@@ -1,24 +1,20 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Marquee from "@/components/Marquee";
-import About from "@/components/About";
-import Formation from "@/components/Formation";
-import Contact from "@/components/Contact";
-import Projects from "@/components/Projects";
-import MoneyRain from "@/components/MoneyRain";
+import CaseStudy from "@/components-transiction/CaseStudy";
+import CTA from "@/components-transiction/CTA";
+import Hero from "@/components-transiction/Hero";
+import Offer from "@/components-transiction/Offer";
+import Problem from "@/components-transiction/Problem";
+import Solution from "@/components-transiction/Solution";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <MoneyRain/>
       <main className="flex flex-col">
         <Hero />
-        <Marquee />
-        <About />
-        <Projects/>
-        <Formation />
-        <Marquee />
-        <Contact />
+        <Problem />
+        <Solution />
+        <CaseStudy />
+        <Offer />
+        <CTA />
       </main>
     </div>
   );
