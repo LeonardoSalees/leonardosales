@@ -33,24 +33,37 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Receba clientes pelo Google",
+    title: "Receba clientes pelo Google | Leonardo Sites",
     description:
       "Landing pages profissionais e campanhas Google Ads para gerar clientes para sua empresa.",
     url: "https://leonardosites.com.br",
     siteName: "Leonardo Sites",
     images: [
       {
-        url: "/opengraph-img.png",
+        url: "/opengraph-img.png", // Certifique-se que o arquivo existe em /public/opengraph-img.png
         width: 1200,
         height: 630,
-        alt: "Clientes pelo Google",
+        alt: "Visualização do serviço Leonardo Sites",
       },
     ],
     locale: "pt_BR",
     type: "website",
   },
-};
+  
+  // Adicione isso para garantir o preview em mais redes
+  twitter: {
+    card: "summary_large_image",
+    title: "Receba clientes pelo Google | Leonardo Sites",
+    description: "Criação de sites e gestão de Google Ads para empresas.",
+    images: ["/opengraph-img.png"],
+  },
 
+  // Robôs de busca
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 export default function RootLayout({
   children,
 }: Readonly<{
