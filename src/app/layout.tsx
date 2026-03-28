@@ -88,6 +88,7 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+        <meta name="google-site-verification" content="FmaP3WGVzNMxxK1S0qCfxYeIVtcVhl-OSXXthOY0jGM" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a0c10] text-white font-[family-name:var(--font-geist-sans)]`}
