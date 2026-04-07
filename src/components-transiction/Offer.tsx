@@ -38,7 +38,7 @@ const Offer = () => {
         >
           {/* Ancoragem de preço */}
           <div className="mb-8">
-            <p className="text-slate-400 line-through text-lg">Investimento comum: R$1800+</p>
+            <p className="text-slate-400 line-through text-lg">Investimento comum: R$2.500,00+</p>
             <p className="text-slate-500 text-sm italic">(Site + Configuração Profissional)</p>
           </div>
 
@@ -59,7 +59,7 @@ const Offer = () => {
           {/* Preço de oferta */}
           <div className="mb-8">
             <p className="text-slate-500 text-sm mb-1 font-semibold uppercase tracking-wider">Investimento único de implementação</p>
-            <div className="text-6xl font-black text-slate-900 mb-2">R$497</div>
+            <div className="text-6xl font-black text-slate-900 mb-2">R$1.497,00</div>
             <p className="text-xs text-slate-400 max-w-sm mx-auto">
               * O valor do tráfego é pago diretamente ao Google (recomendado a partir de R$20/dia)
             </p>
